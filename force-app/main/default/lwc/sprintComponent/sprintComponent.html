@@ -1,0 +1,48 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Total Time Spent/Estimated Hours" icon-name="standard:dashboard">
+        <div class="slds-clearfix ">
+            <div class="slds-float_left slds-p-left_xx-large">
+                <template for:each={objList} for:item="obj">
+                    <div key={obj.name} class="details" style="display:flex;justify-content:space-between">
+                        <div>{obj.name}:</div>
+                        <div class={obj.colorProperty}>{obj.totalEffort}/{obj.estimatedEffort}</div>
+                    </div>
+                </template>
+                     <!-- <div class="details">Demo Engineering Team:
+                     <div class={colorCodeDemo}>65/80</div> 
+                      </div> 
+                      <div class="details">CX Engineering Team:
+                           <div class={colorCodeACX}>22/32</div> 
+                      </div> 
+                      <div class="details">Designer Team:
+                         <div class={colorCode}>30/64</div>
+                        
+                      </div>
+                      <div class="details">Technical Strategy Team:
+                          <div class={colorCode}>0/0</div> 
+                      </div>
+                      <div class="details">Creative Strategy Team:
+                          <div class={colorCode}>0/0</div> 
+                      </div> 
+                      <div class="details">Communication Design Team:
+                           <div class={colorCode}>0/0</div> 
+  
+                      </div> -->
+                 </div>
+                      
+                <!-- </div>  -->
+                <!--<div class="slds-float_right slds-p-right_xx-large">
+                    <div class={colorCode}>68/80</div>
+                    <div class={colorCode}>65/80</div>
+                    <div class={colorCode}>22/32</div>
+                    <div class={colorCode}>30/64</div>
+                    <div class={colorCode}>0/0</div>
+                    <div class={colorCode}>0/0</div>
+                    <div class={colorCode}>0/0</div>
+                </div>-->
+<!-- </div> -->
+
+</div>
+      
+    </lightning-card>
+</template>
